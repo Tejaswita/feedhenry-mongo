@@ -1,8 +1,12 @@
 $fh.ready(function() {
-	var fileSrc = "http://url"
+	var fileSrc = "http://url";
 	var parts = fileSrc.split("/");
 	var destFile = parts[parts.length-1];
-	
+	var progressListener = function(progress) {
+	    //progress value that is passed here is a float number between 0 and 1
+	    //convert it to percentage
+	    $('#download_progress').html('<p> current progress: ' + progress * 100 + '%' + '</p>');
+	  };
 	$fh.file({
 		 act:"upload",
 		 filepath:"/home/tejaswita/development/feedhenry/code.mp4",
