@@ -9,7 +9,7 @@
     		 console.log("upload status " + response.res + ". Data being sent :" + response.size);
     	 }, function(msg, err){
     		 alert("Error" + msg);
-    	 });
+      });
      },
     downloadFromServer : function() {
     var progressListener = function(progress) {
