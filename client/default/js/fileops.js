@@ -2,7 +2,7 @@
    console.log("in file upload");
    $fh.file({
      act:"upload",
-		 filepath:"/home/tejaswita/development/feedhenry/code.mp4",
+		 filepath:"init.js",
 		 server:"hhttps://hpcs-gcvuuax99jryhs4ybcretsac-dev_hpcs.df.dev.u101.feedhenry.net/upload"
 	 }, function(response) {
 		 console.log("upload status " + response.res + ". Data being sent :" + response.size);
