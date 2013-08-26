@@ -7,7 +7,7 @@ $fh.ready(function() {
      data: {
        'filepath':
      }
-    });
+    )});
   }
  });
   
