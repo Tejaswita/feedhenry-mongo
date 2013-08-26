@@ -2,7 +2,7 @@
    $fh.file({
      act:"upload",
 		 filepath:"/home/tejaswita/development/feedhenry/code.mp4",
-		 server:"/upload"
+		 server:"http:///upload"
 	 }, function(response) {
 		 console.log("upload status " + response.res + ". Data being sent :" + response.size);
 	 }, function(msg, err){
@@ -31,7 +31,7 @@ var fDownload = function downloadFile() {
 	 }, function(msg, err) {
 		 alert(msg);
 	 })	;
- }
+ };
  
 
 
