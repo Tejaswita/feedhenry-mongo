@@ -1,4 +1,4 @@
- var fileOps = { 
+ fileOps = { 
       uploadToServer = function() {
        console.log("in file upload");
        $fh.file({
