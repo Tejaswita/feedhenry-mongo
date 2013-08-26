@@ -8,7 +8,7 @@
 	 }, function(msg, err){
 		 alert("Error" + msg); 
 	 });	 
- };
+ }
  
  function downloadFile() {
    var fileSrc = "http://url";
@@ -34,7 +34,7 @@
 	 }, function(msg, err) {
 		 alert(msg);
 	 })	;
- };
+ }
  
 
 
