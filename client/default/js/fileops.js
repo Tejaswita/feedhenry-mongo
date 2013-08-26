@@ -8,12 +8,11 @@
     	 }, function(response) {
     		 console.log("upload status " + response.res + ". Data being sent :" + response.size);
     	 }, function(msg, err){
-    		 alert("Error" + msg); 
-    	 });	 
+    		 alert("Error" + msg);
+    	 });
      },
-     
     downloadFromServer : function() {
-     var progressListener = function(progress) {
+    var progressListener = function(progress) {
     	    $('#download_progress').innerHTML('<p> current progress: ' + progress * 100 + '%' + '</p>');
      };
       var fileSrc = "http://url";
