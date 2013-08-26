@@ -3,7 +3,7 @@
    $fh.file({
      act:"upload",
 		 filepath:"init.js",
-		 server:"hhttps://hpcs-gcvuuax99jryhs4ybcretsac-dev_hpcs.df.dev.u101.feedhenry.net/upload"
+		 server:"https://hpcs-gcvuuax99jryhs4ybcretsac-dev_hpcs.df.dev.u101.feedhenry.net/upload"
 	 }, function(response) {
 		 console.log("upload status " + response.res + ". Data being sent :" + response.size);
 	 }, function(msg, err){
