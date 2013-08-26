@@ -1,4 +1,4 @@
- var fUpload = function uploadFile() {
+ var fileUpload = function() {
    $fh.file({
      act:"upload",
 		 filepath:"/home/tejaswita/development/feedhenry/code.mp4",
