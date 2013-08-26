@@ -12,9 +12,9 @@ $fh.ready(function() {
   });
  
  var uploadFromClient = function() {
-    $fh.act({
-     act:'upload'
-    });
+    $fh.env({}, function(props) {
+    console.log("env properties: " + JSON.stringify(props));
+   });
  };
 
  var downloadFromServer = function() {
