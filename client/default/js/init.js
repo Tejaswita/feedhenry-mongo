@@ -7,7 +7,7 @@ $fh.ready(function() {
 
 
   $fh.env({}, function(props) {
-  console.log("env properties" + JSON.stringify(props));
+  console.log("env properties: " + JSON.stringify(props));
  });
  
   $("#downloadFile").bind('click', function() {
