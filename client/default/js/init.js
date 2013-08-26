@@ -3,10 +3,7 @@ $fh.ready(function() {
   
   $("#uploadFile").bind('click', function() {
     $fh.act({
-     act:'upload',
-     data: {
-       'filepath':
-     }
+     act:'upload'
     )});
   }
  });
