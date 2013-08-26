@@ -1,8 +1,7 @@
 $fh.ready(function() {
   var url = ($fh.app_props.mode === "dev" ? $fh.cloud_props.hosts.debugCloudUrl : $fh.cloud_props.hosts.releaseCloudUrl);
   alert('url' + url);
-  $("#download_progress").html = "<p>upload a new file</p>";
-  
+  $("#download_progress").html = "<p>upload a new file</p>";  
   $("#uploadFile").bind('click', function() {
     console.info('in upload');
     uploadFromClient();   
