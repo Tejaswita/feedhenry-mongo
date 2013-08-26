@@ -1,5 +1,6 @@
 $fh.ready(function() {
-  $("#download_progress").innerHTML = "<p>upload a new file</p>";  
+  $("#download_progress").innerHTML = "<p>upload a new file</p>";
+  
   $("#uploadFile").bind('click', function() {
     console.info('in upload');
     uploadFromClient();   
