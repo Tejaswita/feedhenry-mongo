@@ -1,4 +1,5 @@
 $fh.ready(function() {
+  )};
 	var fileSrc = "http://url";
 	var parts = fileSrc.split("/");
 	var destFile = parts[parts.length-1];
@@ -30,6 +31,6 @@ $fh.ready(function() {
 	 }, function(msg, err) {
 		 alert(msg);
 	 })	;
-});
+
 
 
