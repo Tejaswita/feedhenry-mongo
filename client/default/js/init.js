@@ -17,10 +17,9 @@ $fh.ready(function() {
      act:'upload'
     });
  };
- 
+ )};
  var downloadFromServer = function() {
     $fh.act({
      act:'download'
     });
 };
-)};
