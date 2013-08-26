@@ -1,5 +1,6 @@
 $fh.ready(function() {
   var url = $fh.hosts;
+  console.info("url :" + url);
   $("#download_progress").html = "<p>upload a new file</p>";  
   $("#uploadFile").bind('click', function() {
     console.info('in upload');
