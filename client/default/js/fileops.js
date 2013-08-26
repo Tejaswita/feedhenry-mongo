@@ -14,7 +14,7 @@
 	    //convert it to percentage
 	    $('#download_progress').html('<p> current progress: ' + progress * 100 + '%' + '</p>');
 };
- function downloadFile() {
+var fDownload = function downloadFile() {
   var fileSrc = "http://url";
   var parts = fileSrc.split("/");
 	var destFile = parts[parts.length-1];
