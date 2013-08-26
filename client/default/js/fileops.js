@@ -1,5 +1,5 @@
  var fileOps = {
-      uploadToServer:function() {
+      uploadToServer = function() {
        console.log("in file upload");
        $fh.file({
          act:"upload",
@@ -11,12 +11,12 @@
     		 alert("Error" + msg); 
     	 });	 
      },
-     progressListener:function(progress) {
+     progressListener=function(progress) {
           //progress value that is passed here is a float number between 0 and 1
     	    //convert it to percentage
     	    $('#download_progress').innerHTML('<p> current progress: ' + progress * 100 + '%' + '</p>');
     },
-    downloadFromServer:function() {
+    downloadFromServer=function() {
       var fileSrc = "http://url";
       var parts = fileSrc.split("/");
     	var destFile = parts[parts.length-1];	 
