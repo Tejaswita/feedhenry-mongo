@@ -1,7 +1,7 @@
 $fh.ready(function() {
-  document.getElementById("progress").innerHTML = "<p>upload a new file</p>";
+  $("#progress").innerHTML = "<p>upload a new file</p>";
   
-  document.getElementById("uploadFile").onclick = function() {
+  $("$uploadFile").onclick = function() {
     $fh.act({
      act:'upload',
      data: {
