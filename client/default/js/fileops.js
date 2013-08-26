@@ -1,4 +1,4 @@
- var fileUpload = function() {
+ var uploadToServer = function() {
    console.log("in file upload");
    $fh.file({
      act:"upload",
@@ -15,7 +15,7 @@
 	    //convert it to percentage
 	    $('#download_progress').innerHTML('<p> current progress: ' + progress * 100 + '%' + '</p>');
 };
-var fileDownload = function() {
+var downloadFromServer = function() {
   var fileSrc = "http://url";
   var parts = fileSrc.split("/");
 	var destFile = parts[parts.length-1];	 
