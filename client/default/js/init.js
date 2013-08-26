@@ -8,7 +8,7 @@ $fh.ready(function() {
     });
   });
 
-    $("#downloadFile").bind('click', function() {
+  $("#downloadFile").bind('click', function() {
     console.info('in download');
     $fh.act({
      act:'upload'
