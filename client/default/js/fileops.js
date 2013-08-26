@@ -15,7 +15,7 @@
     downloadFromServer : function() {
      var progressListener = function(progress) {
     	    $('#download_progress').innerHTML('<p> current progress: ' + progress * 100 + '%' + '</p>');
-     }
+     };
       var fileSrc = "http://url";
       var parts = fileSrc.split("/");
     	var destFile = parts[parts.length-1];	 
