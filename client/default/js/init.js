@@ -19,4 +19,10 @@ $fh.ready(function() {
     $fh.act({
      act:'upload'
     });
- }
+ };
+ 
+ var DownloadFromServer = function() {
+    $fh.act({
+     act:'download'
+    });
+ };
