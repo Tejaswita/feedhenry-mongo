@@ -5,10 +5,6 @@ $fh.ready(function() {
     uploadFromClient();   
   });
 
-
-  $fh.env({}, function(props) {
-  console.log("env properties: " + JSON.stringify(props));
- });
  
   $("#downloadFile").bind('click', function() {
     console.info('in download');
