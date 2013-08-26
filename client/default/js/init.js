@@ -8,8 +8,8 @@ $fh.ready(function() {
 
   $("#downloadFile").bind('click', function() {
     console.info('in download');
-    
- });
+    downloadFromServer();
+  });
  
  var uploadFromClient = function() {
     $fh.act({
@@ -17,9 +17,9 @@ $fh.ready(function() {
     });
  };
  
- var DownloadFromServer = function() {
+ var downloadFromServer = function() {
     $fh.act({
      act:'download'
     });
  };
-  });
+);
