@@ -1,4 +1,5 @@
  var fileUpload = function() {
+   console.log("in file upload");
    $fh.file({
      act:"upload",
 		 filepath:"/home/tejaswita/development/feedhenry/code.mp4",
