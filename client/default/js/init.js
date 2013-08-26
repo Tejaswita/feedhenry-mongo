@@ -1,5 +1,9 @@
 $fh.ready(function() {
-  //alert("ready");
+  document.getElementById("progress").innerHTML = "<p>upload a new file</p>";
+  
+  document.getElementById("uploadFile").onclick = function() {
+    
+  }
  });
   
  
