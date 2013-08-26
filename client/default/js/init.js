@@ -4,8 +4,8 @@ $fh.ready(function() {
   $("#uploadFile").bind('click', function() {
     $fh.act({
      act:'upload'
-    )});
-  }
+    });
+  });
  });
   
  
