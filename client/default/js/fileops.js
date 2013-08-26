@@ -13,7 +13,7 @@
       //progress value that is passed here is a float number between 0 and 1
 	    //convert it to percentage
 	    $('#download_progress').html('<p> current progress: ' + progress * 100 + '%' + '</p>');
-	  };
+};
  function downloadFile() {
   var fileSrc = "http://url";
   var parts = fileSrc.split("/");
