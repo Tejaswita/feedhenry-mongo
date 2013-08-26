@@ -1,4 +1,5 @@
 $fh.ready(function() {
+  alert("read");
   )};
 	var fileSrc = "http://url";
 	var parts = fileSrc.split("/");
