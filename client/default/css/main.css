@@ -4,5 +4,7 @@
 }
 
 button {
-  height:20px;
+  height:25px;
+  float:left;
+  clear:left;
 }
