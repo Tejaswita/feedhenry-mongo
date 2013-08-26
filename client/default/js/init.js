@@ -7,6 +7,11 @@ $fh.ready(function() {
     uploadFromClient();   
   });
 
+
+  $fh.env({}, function(props) {
+  console.log(JSON.stringify(props));
+ });
+ 
   $("#downloadFile").bind('click', function() {
     console.info('in download');
     downloadFromServer();
