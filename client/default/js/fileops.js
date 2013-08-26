@@ -11,12 +11,11 @@
     		 alert("Error" + msg); 
     	 });	 
      },
-     var progressListener = function(progress) {
-          //progress value that is passed here is a float number between 0 and 1
-    	    //convert it to percentage
-    	    $('#download_progress').innerHTML('<p> current progress: ' + progress * 100 + '%' + '</p>');
-    },
+     
     downloadFromServer : function() {
+     var progressListener = function(progress) {
+    	    $('#download_progress').innerHTML('<p> current progress: ' + progress * 100 + '%' + '</p>');
+     }
       var fileSrc = "http://url";
       var parts = fileSrc.split("/");
     	var destFile = parts[parts.length-1];	 
