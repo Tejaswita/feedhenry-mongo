@@ -17,9 +17,7 @@
 var fDownload = function downloadFile() {
   var fileSrc = "http://url";
   var parts = fileSrc.split("/");
-	var destFile = parts[parts.length-1];
-	
-	 
+	var destFile = parts[parts.length-1];	 
 	 $fh.file({
 		 act: 'download',
 		 src:  fileSrc,
