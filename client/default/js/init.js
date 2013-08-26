@@ -22,4 +22,4 @@ $fh.ready(function() {
      act:'download'
     });
  };
-);
+)};
