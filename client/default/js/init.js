@@ -22,5 +22,5 @@ $fh.ready(function() {
     $fh.act({
      act:'download'
     });
-};
-}
+ };
+});
