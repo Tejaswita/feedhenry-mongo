@@ -3,9 +3,8 @@ $fh.ready(function() {
   
   $("#uploadFile").bind('click', function() {
     console.info('in upload');
-    $fh.act({
-     act:'upload'
-    });
+    uploadFromClient();
+   
   });
 
   $("#downloadFile").bind('click', function() {
@@ -16,3 +15,8 @@ $fh.ready(function() {
   });
  });
  
+ var uploadFromClient = function() {
+    $fh.act({
+     act:'upload'
+    });
+ }
