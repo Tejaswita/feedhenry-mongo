@@ -10,6 +10,7 @@ $fh.ready(function() {
     });
     $("#playVideo").bind('click', function(event){
         console.info('playing video');
+        console.info(JSON.stringify(event));
         mediaOps.play();
     });
   });
