@@ -1,4 +1,4 @@
- function uploadFile() {
+ var fUpload = function uploadFile() {
    $fh.file({
   	 act:"upload",
 		 filepath:"/home/tejaswita/development/feedhenry/code.mp4",
@@ -8,10 +8,10 @@
 	 }, function(msg, err){
 		 alert("Error" + msg); 
 	 });	 
- }
+ };
  
  function downloadFile() {
-   var fileSrc = "http://url";
+  var fileSrc = "http://url";
   var parts = fileSrc.split("/");
 	var destFile = parts[parts.length-1];
 	var progressListener = function(progress) {
@@ -19,7 +19,6 @@
 	    //convert it to percentage
 	    $('#download_progress').html('<p> current progress: ' + progress * 100 + '%' + '</p>');
 	  };
-	
 	 
 	 $fh.file({
 		 act: 'download',
