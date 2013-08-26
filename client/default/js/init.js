@@ -24,3 +24,7 @@ $fh.ready(function() {
     });
  };
 });
+
+  $fh.env({}, function(props) {
+  console.log(JSON.stringify(props));
+ });
