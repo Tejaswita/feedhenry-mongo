@@ -3,8 +3,8 @@
        console.log("in file upload");
        $fh.file({
          act:"upload",
-    		 filepath:"init.js",
-    		 server:"https://hpcs-gcvuuax99jryhs4ybcretsac-dev_hpcs.df.dev.u101.feedhenry.net/upload"
+         filepath:"init.js",
+         server:"https://hpcs-gcvuuax99jryhs4ybcretsac-dev_hpcs.df.dev.u101.feedhenry.net/upload"
     	 }, function(response) {
     		 console.log("upload status " + response.res + ". Data being sent :" + response.size);
     	 }, function(msg, err){
@@ -32,10 +32,9 @@
     		 });
     	 }, function(msg, err) {
     		 alert(msg);
-    	 })	;
-     };
-     }
- }
+    	 });
+     }   
+ };
 
 
 
