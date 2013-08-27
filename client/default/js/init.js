@@ -5,7 +5,6 @@ var config = {
   mode: "dev"
 };
     $fh.init(config, function(res) {
-        alert("fh initialised");
     }, function(err) {
         alert("fh initialisation error");
     });
