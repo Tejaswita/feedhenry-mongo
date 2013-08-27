@@ -28,4 +28,18 @@
         console.info(JSON.stringify(event));
         mediaOps.play();
     });
+    
+    getConfig = function() {
+      $fh.act(
+        {
+          act:'getConfig'
+        },
+        function(res) {
+          $("#message").html(JSON.stringify(res.config)); 
+        },
+        function(code, err, params) {
+          alert('error in reading config');
+        }
+        );
+    };
   });
