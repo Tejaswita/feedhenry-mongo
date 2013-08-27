@@ -12,10 +12,7 @@
     
  $fh.ready(function() {
     $("#config").bind('click', function() {
-      console.info('get config');
-      $fh.act =function {
-      
-      }   
+            
     }); 
     $("#download_progress").html = "<p>upload a new file</p>";  
     $("#uploadFile").bind('click', function() {
