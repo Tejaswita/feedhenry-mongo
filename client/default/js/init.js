@@ -13,7 +13,7 @@
  $fh.ready(function() {
     $("#config").bind('click', function() {
       console.info('get config');
-      $fh.act {
+      $fh.act =function {
       
       }   
     }); 
