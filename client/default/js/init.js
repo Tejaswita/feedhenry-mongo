@@ -5,11 +5,13 @@ var config = {
   mode: "dev"
 };
     $fh.init(config, function(res) {
+        alert("fh initialised");
     }, function(err) {
         alert("fh initialisation error");
     });
     
  $fh.ready(function() {
+   alert("fh ready");
     $("#download_progress").html = "<p>upload a new file</p>";  
     $("#uploadFile").bind('click', function() {
       console.info('in upload');
