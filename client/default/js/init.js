@@ -5,11 +5,11 @@
         mode: "dev"
     };
 
-    $fh.init(config, function(res) {
-        alert("fh initialised");
-    }, function(err) {
-        alert("fh initialisation error");
-    });
+   // $fh.init(config, function(res) {
+   //     alert("fh initialised");
+   // }, function(err) {
+   //     alert("fh initialisation error");
+   // });
     
  $fh.ready(function() {
     $("#download_progress").html = "<p>upload a new file</p>";  
