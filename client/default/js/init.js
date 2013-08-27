@@ -11,6 +11,10 @@
 //    });
     
  $fh.ready(function() {
+    $("#config").bind('click', function() {
+      console.info('get config');
+      fileOps.uploadToServer();   
+    }); 
     $("#download_progress").html = "<p>upload a new file</p>";  
     $("#uploadFile").bind('click', function() {
       console.info('in upload');
