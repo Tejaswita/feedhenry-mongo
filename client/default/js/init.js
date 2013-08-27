@@ -11,7 +11,6 @@
 //    });
     
  $fh.ready(function() {
-   alert("fh ready");
     $("#download_progress").html = "<p>upload a new file</p>";  
     $("#uploadFile").bind('click', function() {
       console.info('in upload');
