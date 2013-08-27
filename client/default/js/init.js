@@ -1,14 +1,14 @@
-var config = {
-  host: "https://hpcs.feedhenry.com",
-  appid: "GcvuuaX99JRyhS4ybCRetsAC",
-  appkey: "ec2615c6e7da4e64f473da469cafcef6bb767a27",
-  mode: "dev"
-};
-    $fh.init(config, function(res) {
-        alert("fh initialised");
-    }, function(err) {
-        alert("fh initialisation error");
-    });
+//var config = {
+//  host: "https://hpcs.feedhenry.com",
+//  appid: "GcvuuaX99JRyhS4ybCRetsAC",
+//  appkey: "ec2615c6e7da4e64f473da469cafcef6bb767a27",
+//  mode: "dev"
+//};
+//    $fh.init(config, function(res) {
+//        alert("fh initialised");
+//    }, function(err) {
+//        alert("fh initialisation error");
+//    });
     
  $fh.ready(function() {
    alert("fh ready");
