@@ -2,6 +2,9 @@
 .project
 *.class
 .settings/*
+node_modules/*
+cloud/node_modules/*
+.fhclocal/*
 # Package Files #
 *.jar
 *.war

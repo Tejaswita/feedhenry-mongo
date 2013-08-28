@@ -1,25 +1,35 @@
 <link rel="stylesheet" type="text/css" href="css/main.css" />
-<title>File upload with mongodb demo</title>
-
-<div id="header"> Mongo Example</div>
-  <div id="content">
-  <button id="config">Config</button>
-    <button id="uploadFile">Upload</button>
-    <button id="downloadFile">Download</button>
-    <button id="videoPlayer">Play</button>
-    <div id="download_progress"></div>
-  </div>
-  <div>
-  <div id="message"></div>
-  <input type="file" accept="video/*"/>
-  <video controls autoplay> </video>
-  </div>
-  
-<script type="text/javascript">
-	var exports = {};  
-</script>
 
 <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 <script type="text/javascript" src="js/init.js"></script>
-<script type="text/javascript" src="js/videoops.js"></script>
+<script type="text/javascript" src="js/videoOps.js"></script>
+<script type="text/javascript" src="js/dbOps.js"></script>
 <script type="text/javascript" src="config.js"></script>
+<script type="text/javascript">
+	var exports = {};
+</script>
+
+<title>FH Spike</title>
+
+<div class="content">
+<div class="header">Communicate with cloud</div>
+	<button id="config">Get Config</button>
+	<div class="message" id="config-message">Result: </div>
+</div>
+
+<div class="content">
+<div class="header">Video streaming spike</div>
+	<input type="file" accept="video/*" />
+	<video controls autoplay></video>
+	<button id="uploadFile">Upload</button>
+	<button id="downloadFile">Download</button>
+	<button id="videoPlayer">Play</button>
+	<div id="download_progress"></div>
+	<div class="message" id="video-message">Result: </div>
+</div>
+
+<div class="content">
+<div class="header">Mongo spike</div>
+	<button id="db-add">Add Record</button>
+	<div class="message" id="db-data">Result: </div>
+</div>

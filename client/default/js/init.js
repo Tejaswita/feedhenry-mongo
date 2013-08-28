@@ -14,6 +14,9 @@
     $("#config").bind('click', function() {
         getConfig();    
     }); 
+    $("#db-add").bind('click', function() {
+        dbOps.add();    
+    }); 
     $("#download_progress").html = "<p>upload a new file</p>";  
     $("#uploadFile").bind('click', function() {
       console.info('in upload');
@@ -35,7 +38,7 @@
           act:'getConfig'
         },
         function(res) {
-          $("#message").html(JSON.stringify(res.config)); 
+          $("#config-message").html(JSON.stringify(res.config)); 
         },
         function(code, err, params) {
           alert('error in reading config');

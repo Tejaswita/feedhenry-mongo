@@ -1,7 +1,7 @@
 (function localFileVideoPlayerInit(win) {
     var URL = win.URL || win.webkitURL,
         displayMessage = (function displayMessageInit() {
-            var node = document.querySelector('#message');
+            var node = document.querySelector('#video-message');
             return function displayMessage(message, isError) {
                 node.innerHTML = message;
                 node.className = isError ? 'error' : 'info';

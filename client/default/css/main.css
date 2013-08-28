@@ -1,28 +1,41 @@
-#content {
-	height:300px;
-  width:300px;
+.message {
+	clear:both;
+}
+.content {	
+	margin-top: 20px;
+}
+
+.header {
+	float:left;
+	clear:both;
+	margin-bottom: 10px;
 }
 
 button {
-  height:25px;
-  float:left;
-  clear:left;
+	height: 25px;
+	float:left;
 }
 
-video, input {
-    display: block;
+video,input {
+	float: left;
+	clear: right;
 }
+
 video {
-   width:200px;
-   height:200px;
+	width: 200px;
+	height: 200px;
+	border:1px black solid;
 }
+
 input {
-    width: 100%;       
+	width: 100%;
 }
+
 .info {
-    background-color: aqua;            
+	background-color: aqua;
 }
+
 .error {
-    background-color: red;
-    color: white;
+	background-color: red;
+	color: white;
 }
