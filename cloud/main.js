@@ -7,6 +7,7 @@ exports.getConfig = function(params, callback) {
 };
 
 exports.addRecord = function(params, callback){
+  console.log("Adding record to db");
 	$fh.db({
 		  "act": "create",
 		  "type": "myFirstEntity",
