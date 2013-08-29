@@ -30,5 +30,4 @@ var videoOps = {
 			}
 			return fileURL;
 		}
-		
 };
