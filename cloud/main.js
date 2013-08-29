@@ -21,8 +21,9 @@ exports.addRecord = function(params, callback){
 		  }
 		}, function(err, data) {
 		  if (err) {
-		    console.log("Error " + err)
+		    console.log("Error " + err);
 		  } else {
+   	    console.log("Data uploaded to DB ");
 		    console.log(JSON.stringify(data));
 		    return  callback(null, {data:data});
 		    /*
