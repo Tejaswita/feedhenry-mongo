@@ -1,33 +1,34 @@
-(function localFileVideoPlayerInit(win) {
-    var URL = win.URL || win.webkitURL,
-        displayMessage = (function displayMessageInit() {
-            var node = document.querySelector('#video-message');
-            return function displayMessage(message, isError) {
-                node.innerHTML = message;
-                node.className = isError ? 'error' : 'info';
-            };
-        }()),
-        playSelectedFile = function playSelectedFileInit(event) {
-            var file = this.files[0];
-            var type = file.type;
-            var videoNode = document.querySelector('video');
-            var canPlay = videoNode.canPlayType(type);
-            canPlay = (canPlay === '' ? 'no' : canPlay);
-            var message = 'Can play type "' + type + '": ' + canPlay;
-            var isError = canPlay === 'no';
-            displayMessage(message, isError);
-            if (isError) {
-                return;
-            }
-            var fileURL = URL.createObjectURL(file);
-            videoNode.src = fileURL;
-        },
-    inputNode = document.querySelector('input');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-    if (!URL) {
-        displayMessage('Your browser is not ' + 
-           '<a href="http://caniuse.com/bloburls">supported</a>!', true);
-        
-        return;
-    }
-    inputNode.addEventListener('change', playSelectedFile, false);
-}(window));
+var videoOps = {
+		play : function(event) {
+			console.log("playing video file");
+			var file = $("input").get(0).files[0];
+			var type = file.type;
+			var canPlay = $("video").get(0).canPlayType(type);
+			canPlay = (canPlay === '' ? 'no' : canPlay);
+			var message = 'Can play type "' + type + '": ' + canPlay;
+			var isError = canPlay === 'no';
+			this.displayMessage(message, isError);
+			if (isError) {
+				return;
+			}
+			var fileURL = this.getUrl(file);
+			$("video").attr("src", fileURL);
+		},
+		displayMessage: function(message, isError) {
+			$("#video-message").html(message);
+			var className = isError ? 'error' : 'info';
+			$("#video-message").addClass(className);
+		},
+		getUrl : function(file){
+			var URL = window.URL || window.webkitURL;
+			var fileURL = URL.createObjectURL(file);
+			if (!URL) {
+				displayMessage('Your browser is not '
+						+ '<a href="http://caniuse.com/bloburls">supported</a>!', true);
+
+				return;
+			}
+			return fileURL;
+		}
+		
+};

@@ -6,6 +6,7 @@ exports.getConfig = function(params, callback) {
   return callback(null, {config: cfg.config});
 };
 
+
 exports.addRecord = function(params, callback){
   console.log("Adding record to db");
 	$fh.db({
