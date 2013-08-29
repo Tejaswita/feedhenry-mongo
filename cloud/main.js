@@ -23,7 +23,7 @@ exports.addRecord = function(params, callback){
 		  if (err) {
 		    console.log("Error " + err);
 		  } else {
-   	    console.log("Data uploaded to DB ");
+   	    console.log("Data uploaded to db");
 		    console.log(JSON.stringify(data));
 		    return  callback(null, {data:data});
 		    /*
